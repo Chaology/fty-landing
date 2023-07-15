@@ -18,12 +18,12 @@ const paths = {
     video: './src/video',
   },
   dist: {
-    css: './assets/css',
-    favicon: './assets/favicon',
-    fonts: './assets/fonts',
-    img: './assets/img',
-    js: './assets/js',
-    video: './assets/video',
+    css: './public/css',
+    favicon: './public/favicon',
+    fonts: './public/fonts',
+    img: './public/img',
+    js: './public/js',
+    video: './public/video',
   },
 };
 
