@@ -1,0 +1,947 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    {{> partials/head title="Landkit"}}
+  </head>
+  <body>
+
+    <!-- MODALS -->
+    {{> partials/modals}}
+
+    <!-- NAVBAR -->
+    {{> partials/navbar classList="navbar-light bg-white" container="container" button="primary"}}
+
+    <!-- WELCOME -->
+    <section class="pt-4 pt-md-11">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-12 col-md-5 col-lg-6 order-md-2">
+
+            <!-- Image -->
+            <img src="assets/img/illustrations/banner.png" class="img-fluid mw-md-150 mw-lg-130 mb-6 mb-md-0" alt="..." data-aos="fade-up" data-aos-delay="100">
+
+          </div>
+          <div class="col-12 col-md-7 col-lg-6 order-md-1" data-aos="fade-up">
+
+            <!-- Heading -->
+            <h1 class="display-3 text-center text-md-start">
+              <span class="text-primary">泛图云</span><br>
+              专注异构边缘算力
+            </h1>
+
+            <!-- Text -->
+            <p class="lead text-center text-md-start text-muted mb-6 mb-lg-8">
+              为您提供产业级 GPU 算力和储存管理方案
+            </p>
+
+            <!-- Buttons -->
+            <div class="text-center text-md-start">
+              <a href="https://apitable.com/share/shruXB9qXRqeWwLTCF6bL/fomvnWZTqodSxYJPie" target="_blank" class="btn btn-primary shadow lift me-1">
+                申请免费试用 
+                <!-- <i class="fe fe-arrow-right d-none d-md-inline ms-3"></i> -->
+              </a>
+              <a href="https://docs.fantuyun.com/" target="_blank" class="btn btn-primary-soft lift">
+                查看文档
+              </a>
+            </div>
+
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+    </section>
+
+    <!-- FEATURES -->
+    <section class="py-8 py-md-11 border-bottom">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-4" data-aos="fade-up">
+
+            <!-- Icon -->
+            <div class="icon text-primary mb-3">
+              {{> general/settings-1}}
+            </div>
+
+            <!-- Heading -->
+            <h3>
+              超强性能
+            </h3>
+
+            <!-- Text -->
+            <p class="text-muted mb-6 mb-md-0">
+              高可用主板结合高性能 GPU <br>
+              搭配高速稳定网络
+            </p>
+
+          </div>
+          <div class="col-12 col-md-4" data-aos="fade-up" data-aos-delay="50">
+
+            <!-- Icon -->
+            <div class="icon text-primary mb-3">
+              {{> layout/layout-arrange}}
+            </div>
+
+            <!-- Heading -->
+            <h3>
+              容易上手
+            </h3>
+
+            <!-- Text -->
+            <p class="text-muted mb-6 mb-md-0">
+              自带 Windows 云桌面系统 <br> 
+              方便小白用户使用
+            </p>
+
+          </div>
+          <div class="col-12 col-md-4" data-aos="fade-up" data-aos-delay="100">
+
+            <!-- Icon -->
+            <div class="icon text-primary mb-3">
+              {{> code/code}}
+            </div>
+
+            <!-- Heading -->
+            <h3>
+              灵活选择
+            </h3>
+
+            <!-- Text -->
+            <p class="text-muted mb-0">
+              裸金属 + 虚拟机 <br>
+              根据需求定制化服务
+            </p>
+
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+    </section>
+
+    <section class="py-6 py-md-8 border-bottom">
+      <div class="container">
+        <div class="row align-items-center justify-content-center">
+          <div class="col-6 col-sm-6 col-md-3 mb-4 mb-md-0">
+            <div class="row">
+              <div class="col-2"></div> <!-- Empty column -->
+              <div class="col-8">
+                <!-- Brand -->
+                <div class="img-fluid text-gray-600 mb-2 mb-md-0">
+                  <img src="assets/img/icons/social/asus.svg">
+                </div>
+              </div>
+              <div class="col-2"></div> <!-- Empty column -->
+            </div>
+          </div>
+          <div class="col-6 col-sm-6 col-md-3 mb-4 mb-md-0">
+            <div class="row">
+              <div class="col-2"></div> <!-- Empty column -->
+              <div class="col-8">
+                <!-- Brand -->
+                <div class="img-fluid text-gray-600 mb-2 mb-md-0">
+                  <img src="assets/img/icons/social/huawei.svg">
+                </div>
+              </div>
+              <div class="col-2"></div> <!-- Empty column -->
+            </div>
+          </div>
+          <div class="col-6 col-sm-6 col-md-3 mb-4 mb-md-0">
+            <div class="row">
+              <div class="col-2"></div> <!-- Empty column -->
+              <div class="col-8">
+                <!-- Brand -->
+                <div class="img-fluid text-gray-600 mb-2 mb-md-0">
+                  <img src="assets/img/icons/social/yidong.svg">
+                </div>
+              </div>
+              <div class="col-2"></div> <!-- Empty column -->
+            </div>
+          </div>
+          <div class="col-6 col-sm-6 col-md-3 mb-4 mb-md-0">
+            <div class="row">
+              <div class="col-2"></div> <!-- Empty column -->
+              <div class="col-8">
+                <!-- Brand -->
+                <div class="img-fluid text-gray-600 mb-2 mb-md-0">
+                  <img src="assets/img/icons/social/fusion.svg">
+                </div>
+              </div>
+              <div class="col-2"></div> <!-- Empty column -->
+            </div>
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+    </section>
+
+
+
+
+    <!-- ABOUT -->
+    <section class="pt-8 pt-md-11 bg-gradient-light-white">
+      <div class="container">
+
+        <div class="row align-items-center">
+          <div class="col-12 col-md-7 col-lg-6" data-aos="fade-right">
+
+            <!-- Heading -->
+            <h2>
+              主打产品 <br>
+              <span class="text-primary">CX5200 V5</span>
+            </h2>
+
+            <!-- Text -->
+            <p class="fs-lg text-muted mb-6">
+              与华为旗下服务器团队超聚变公司订制高可用高性能平台
+            </p>
+
+            <!-- List -->
+            <!-- <div class="d-flex"> -->
+
+              <!-- Icon -->
+<!--               <div class="icon text-primary">
+                {{> media/repeat}}
+              </div>
+
+              <div class="ms-5">
+ -->
+                <!-- Heading -->
+<!--                 <h4 class="mb-1">
+                  Bootstrap users since the beginning
+                </h4> -->
+
+                <!-- Text -->
+<!--                 <p class="text-muted mb-6">
+                  We've been developing with Bootstrap since it was publicly released in 2011.
+                </p>
+
+              </div>
+
+            </div> -->
+            <!-- <div class="d-flex"> -->
+
+              <!-- Icon -->
+<!--               <div class="icon text-primary">
+                {{> code/code}}
+              </div>
+
+              <div class="ms-5"> -->
+
+                <!-- Heading -->
+<!--                 <h4 class="mb-1">
+                  Deep understanding of Bootstrap
+                </h4> -->
+
+                <!-- Text -->
+<!--                 <p class="text-muted mb-6 mb-md-0">
+                  We've watched Bootstrap grow up over the years and understand it better than almost anyone.
+                </p>
+
+              </div>
+
+            </div> -->
+            <div class="d-flex align-items-center">
+              <!-- Icon -->
+              <div class="icon text-muted">
+                {{> devices/server}}
+              </div>
+              <!-- Single line text -->
+              <div class="ms-5">
+                <p class="mb-1">4U2路机架服务器</p>
+              </div>
+            </div>
+            <div class="d-flex align-items-center">
+              <!-- Icon -->
+              <div class="icon text-muted">
+                {{> devices/cpu-2}}
+              </div>
+              <div class="ms-5">
+                <p class="mb-1">CPU: IntelXeon Platinum 3.0Ghz 18C/36T*2</p>
+              </div>
+            </div>
+            <div class="d-flex align-items-center">
+              <!-- Icon -->
+              <div class="icon text-muted">
+                {{> devices/sd-card}}
+              </div>
+              <!-- Single line text -->
+              <div class="ms-5">
+                <p class="mb-1">内存：DDR4 32G*4</p>
+              </div>
+            </div>
+            <div class="d-flex align-items-center">
+              <!-- Icon -->
+              <div class="icon text-muted">
+                {{> devices/hard-drive}}
+              </div>
+              <!-- Single line text -->
+              <div class="ms-5">
+                <p class="mb-1">系统盘: SSD 960G*1</p>
+              </div>
+            </div>
+            <div class="d-flex align-items-center">
+              <!-- Icon -->
+              <div class="icon text-muted">
+                {{> devices/router-1}}
+              </div>
+              <!-- Single line text -->
+              <div class="ms-5">
+                <p class="mb-1">网络: 10GE*2,1GE*2,IPMI*1</p>
+              </div>
+            </div>
+            <div class="d-flex align-items-center">
+              <!-- Icon -->
+              <div class="icon text-muted">
+                {{> devices/cpu-1}}
+              </div>
+              <!-- Single line text -->
+              <div class="ms-5">
+                <p class="mb-1">GPU: Nvidia RTX3090 24GB 10496 CUDA Cores*4</p>
+              </div>
+            </div>
+
+          </div>
+          <div class="col-12 col-md-5 col-lg-6">
+
+            <div class="w-md-150 w-lg-130 position-relative" data-aos="fade-left">
+
+              <!-- Shape -->
+              <div class="shape shape-fluid-y shape-blur-3 text-gray-200">
+                {{> blurs/blur-4}}
+              </div>
+
+              <!-- Image -->
+              <div class="img-skewed img-skewed-start">
+
+                <!-- Image -->
+                <img src="assets/img/screenshots/desktop/pc_t.png" class="img-fluid" alt="...">
+
+              </div>
+
+            </div>
+
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section class="pt-10 pt-md-12">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-10 col-lg-8 text-center">
+
+            <!-- Heading -->
+            <h2>
+              节点集群
+            </h2>
+
+            <!-- Text -->
+            <p class="fs-lg text-primary mb-7 mb-md-9">
+              运营商边缘机房 EDGE IDC | 公网三线接入 /SD-WAN
+            </p>
+
+          </div>
+        </div> <!-- / .row -->
+        <div class="row">
+          <div class="col-12">
+
+            <!-- Card -->
+            <div class="card card-row shadow-light-lg mb-6">
+              <div class="row gx-0">
+                <div class="col-12 col-md-6">
+
+                  <!-- Slider -->
+                  <div class="card-img-slider" data-flickity='{"fade": true, "imagesLoaded": true, "pageDots": false, "prevNextButtons": false, "asNavFor": "#blogSlider", "draggable": false}'>
+                    <a class="card-img-start position-absolute d-block w-100 bg-cover" style="background-image: url(assets/img/photos/01.png);" href="#!">
+
+                      <!-- Image (placeholder) -->
+                      <img src="assets/img/photos/01.png" alt="..." class="img-fluid d-md-none invisible">
+
+                    </a>
+                    <a class="card-img-start position-absolute d-block w-100 bg-cover" style="background-image: url(assets/img/photos/02.png);" href="#!">
+
+                      <!-- Image (placeholder) -->
+                      <img src="assets/img/photos/02.png" alt="..." class="img-fluid d-md-none invisible">
+
+                    </a>
+                    <a class="card-img-start position-absolute d-block w-100 bg-cover" style="background-image: url(assets/img/photos/03.png);" href="#!">
+
+                      <!-- Image (placeholder) -->
+                      <img src="assets/img/photos/03.png" alt="..." class="img-fluid d-md-none invisible">
+
+                    </a>
+                  </div>
+
+                  <!-- Shape -->
+                  <div class="shape shape-end shape-fluid-y text-white d-none d-md-block">
+                    {{> curves/curve-4}}
+                  </div>
+
+                </div>
+                <div class="col-12 col-md-6 position-md-static">
+
+                  <!-- Slider -->
+                  <div class="position-md-static" data-flickity='{"wrapAround": true, "pageDots": false, "adaptiveHeight": true}' id="blogSlider">
+                    <div class="w-100">
+
+                      <!-- Body -->
+                      <div class="card-body">
+                        <blockquote class="blockquote text-center mb-0">
+
+                          <!-- Brand -->
+                          <div class="row justify-content-center mb-5 mb-md-7">
+                            <div class="col-6 col-sm-4 col-md-7 col-lg-5">
+
+                              <!-- Logo -->
+
+<!--                               <div class="img-fluid" style="color: #FF5A5F;">
+                                {{> logotype/airbnb}}
+                              </div> -->
+                              <h2 class="text-dark">
+                                安全稳定
+                              </h2>
+
+
+                            </div>
+                          </div> <!-- / .row -->
+
+                          <!-- Text -->
+                          <p class="mb-5 mb-md-7 fs-lg text-muted">
+                            机房24小时运作，备用供电完备，散热效率高，副本存储数据更加安全可靠
+                          </p>
+
+                          <!-- Footer -->
+<!--                           <footer class="blockquote-footer">
+                            <span class="h6 text-uppercase">Dave Gamache</span>
+                          </footer> -->
+
+                        </blockquote>
+                      </div>
+
+                    </div>
+                    <div class="w-100">
+
+                      <!-- Body -->
+                      <div class="card-body">
+                        <blockquote class="blockquote text-center mb-0">
+
+                          <!-- Brand -->
+                          <div class="row justify-content-center mb-5 mb-md-7">
+                            <div class="col-6 col-sm-4 col-md-7 col-lg-5">
+
+                              <!-- Logo -->
+<!--                               <div class="img-fluid" style="color: #3F5D87;">
+                                {{> logotype/instagram}}
+                              </div> -->
+                              <h2 class="text-dark">
+                                高速网络
+                              </h2>
+
+                            </div>
+                          </div> <!-- / .row -->
+
+                          <!-- Text -->
+                          <p class="mb-5 mb-md-7 fs-lg text-muted">
+                            运营商自用T3级别IDC机房，提供超高速网络，保证低延时大带宽
+                          </p>
+
+                          <!-- Footer -->
+<!--                           <footer class="blockquote-footer">
+                            <span class="h6 text-uppercase">Russ D'Sa</span>
+                          </footer> -->
+
+                        </blockquote>
+                      </div>
+
+                    </div>
+                    <div class="w-100">
+
+                      <!-- Body -->
+                      <div class="card-body">
+                        <blockquote class="blockquote text-center mb-0">
+
+                          <!-- Brand -->
+                          <div class="row justify-content-center mb-5 mb-md-7">
+                            <div class="col-6 col-sm-4 col-md-7 col-lg-5">
+
+                              <!-- Logo -->
+<!--                               <div class="img-fluid" style="color: #3F5D87;">
+                                {{> logotype/instagram}}
+                              </div> -->
+                              <h2 class="text-dark">
+                                模块灵活
+                              </h2>
+
+                            </div>
+                          </div> <!-- / .row -->
+
+                          <!-- Text -->
+                          <p class="mb-5 mb-md-7 fs-lg text-muted">
+                            可提供GPU服务器、全闪存服务器、HDD服务器和管理服务器等搭配模块化方案
+                          </p>
+
+                          <!-- Footer -->
+<!--                           <footer class="blockquote-footer">
+                            <span class="h6 text-uppercase">Russ D'Sa</span>
+                          </footer> -->
+
+                        </blockquote>
+                      </div>
+
+                    </div>                    
+                  </div>
+
+                </div>
+              </div> <!-- / .row -->
+            </div>
+
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+    </section>
+
+    <!-- SHAPE -->
+    <div class="position-relative mt-n8">
+      <div class="shape shape-bottom shape-fluid-x text-gray-200">
+        {{> curves/curve-3}}
+      </div>
+    </div>
+
+        <!-- SOLUTION -->
+    <section class="py-8 pt-md-11 pb-md-12 bg-gray-200">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-10 col-lg-8 text-center">
+
+            <!-- Preheading -->
+<!--             <h3 class="text-uppercase">
+              运营商边缘机房 EDGE IDC
+            </h3> -->
+
+            <!-- Heading -->
+<!--             <h2 class="fw-bold text-primary">
+            </h2> -->
+
+            <!-- Text -->
+<!--             <p class="fs-lg text-gray-700 mb-7 mb-md-9">
+              公网三线接入 /SD-WAN
+            </p>
+ -->
+          </div>
+        </div> <!-- / .row -->
+        <div class="row">
+          <div class="col-12 col-md-6 col-lg-4 mb-3">
+
+            <!-- Heading -->
+            <h4 class="fw-bold mb-5">
+              GPU
+            </h4>
+
+            <!-- List -->
+            <div class="d-flex">
+
+              <!-- Badge -->
+              <div class="badge badge-rounded-circle bg-success mt-1 me-4">
+                <i class="fe fe-check"></i>
+              </div>
+
+              <!-- Text -->
+              <p class="text-muted">
+                35+ PFLOPS
+              </p>
+
+            </div>
+            <div class="d-flex">
+
+              <!-- Badge -->
+              <div class="badge badge-rounded-circle bg-success mt-1 me-4">
+                <i class="fe fe-check"></i>
+              </div>
+
+              <!-- Text -->
+              <p class="text-muted">
+                1000+ GPU Cores
+              </p>
+
+            </div>
+            <div class="d-flex">
+
+              <!-- Badge -->
+              <div class="badge badge-rounded-circle bg-success mt-1 me-4">
+                <i class="fe fe-check"></i>
+              </div>
+
+              <!-- Text -->
+              <p class="text-muted">
+                裸金属+虚拟机管理
+              </p>
+
+            </div>
+
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 mb-3">
+
+            <!-- Heading -->
+            <h4 class="fw-bold mb-5">
+              存储
+            </h4>
+
+            <!-- List -->
+            <div class="d-flex">
+
+              <!-- Badge -->
+              <div class="badge badge-rounded-circle bg-success mt-1 me-4">
+                <i class="fe fe-check"></i>
+              </div>
+
+              <!-- Text -->
+              <p class="text-muted">
+                分布式存储系统
+              </p>
+
+            </div>
+            <div class="d-flex">
+
+              <!-- Badge -->
+              <div class="badge badge-rounded-circle bg-success mt-1 me-4">
+                <i class="fe fe-check"></i>
+              </div>
+
+              <!-- Text -->
+              <p class="text-muted">
+                高性能并行存储系统
+              </p>
+
+            </div>
+            <div class="d-flex">
+
+              <!-- Badge -->
+              <div class="badge badge-rounded-circle bg-success mt-1 me-4">
+                <i class="fe fe-check"></i>
+              </div>
+
+              <!-- Text -->
+              <p class="text-muted">
+                10PB NVME SSD+HDD
+              </p>
+
+            </div>
+
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 mb-3">
+
+            <!-- Heading -->
+            <h4 class="fw-bold mb-5">
+              管理
+            </h4>
+
+            <!-- List -->
+            <div class="d-flex">
+
+              <!-- Badge -->
+              <div class="badge badge-rounded-circle bg-success mt-1 me-4">
+                <i class="fe fe-check"></i>
+              </div>
+
+              <!-- Text -->
+              <p class="text-muted">
+                双万兆光纤上联
+              </p>
+
+            </div>
+            <div class="d-flex">
+
+              <!-- Badge -->
+              <div class="badge badge-rounded-circle bg-success mt-1 me-4">
+                <i class="fe fe-check"></i>
+              </div>
+
+              <!-- Text -->
+              <p class="text-muted">
+                100 GE 核心（RDMA/ROCE）
+              </p>
+
+            </div>
+            <div class="d-flex">
+
+              <!-- Badge -->
+              <div class="badge badge-rounded-circle bg-success mt-1 me-4">
+                <i class="fe fe-check"></i>
+              </div>
+
+              <!-- Text -->
+              <p class="text-muted">
+                10,000+ CPU Cores
+              </p>
+
+            </div>
+          </div>
+
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+    </section>
+
+<!--     <div class="position-relative mt-n8">
+      <div class="shape shape-bottom shape-fluid-x text-gray-200">
+        {{> curves/curve-2}}
+      </div>
+    </div> -->
+
+    <!-- PRICING -->
+
+
+
+    <!-- SHAPE -->
+    <div class="position-relative mt-n15 pt-15">
+      <div class="shape shape-bottom shape-fluid-x text-light">
+        {{> curves/curve-1}}
+      </div>
+    </div>
+
+
+    <!-- FAQ -->
+    <section class="pt-12 bg-gradient-light-white">
+          <!-- ABOUT -->
+      <div class="container">
+        <div class="row justify-content-between align-items-center">
+
+          <div>
+            <!-- Shape -->
+<!--               <div class="shape shape-fluid-y shape-blur-1 text-gray-200">
+                {{> blurs/blur-4}}
+              </div> -->
+            <h1>
+              交付模式
+            </h1>
+            <!-- Text -->
+            <p class="lead mb-6 mb-md-8 text-primary">
+              两种方式灵活选择
+            </p>
+          </div>
+          <div class="col-12 col-md-6 col-lg-5 order-md-2">
+
+            <!-- Image grid -->
+            <div class="d-flex flex-column w-md-130 mb-6 mb-md-0">
+
+              <div class="device-combo device-combo-macbook-iphonex mb-6 mb-md-0">
+
+              <!-- Macbook -->
+              <div class="device device-macbook">
+                <img src="assets/img/screenshots/desktop/dashkit-alt.jpg" class="device-screen" alt="...">
+                <img src="assets/img/devices/macbook.svg" class="img-fluid" alt="...">
+              </div>
+
+              <!-- iPhone -->
+              <div class="device device-iphonex">
+                <img src="assets/img/screenshots/mobile/dashkit-alt.jpg" class="device-screen" alt="...">
+                <img src="assets/img/devices/iphonex.svg" class="img-fluid" alt="...">
+              </div>
+
+            </div>
+
+              <!-- Image -->
+              <!-- <img class="img-fluid rounded shadow align-self-start" data-jarallax-element="-20" src="assets/img/devices/macbook.png" alt="..." style="min-height: 1px; max-width: 50%; margin-left: 40%;"> -->
+
+              <!-- Image -->
+              <!-- <img class="img-fluid rounded shadow align-self-start" data-jarallax-element="-50" src="assets/img/devices/macbook.png" alt="..." style="min-height: 1px; max-width: 50%; margin-top: -35%;"> -->
+
+              <!-- Image -->
+              <!-- <img class=" img-fluid rounded shadow align-self-center" data-jarallax-element="-80" src="assets/img/screenshots/ui/analytics-3.png" alt="..." style="min-height: 1px; max-width: 50%; margin-top: -20%;"> -->
+
+            </div>
+
+          </div>
+          <div class="col-12 col-md-6 order-md-1 pt-md-12">
+
+            <!-- Heading -->
+            <h1 class="text-gray-700">
+              虚拟机
+            </h1>
+
+            <!-- Text -->
+            <p class="fs-lg text-gray-700 mb-6">
+              自由方便，灵活计费，自带 Windows 远程桌面
+            </p>
+
+            <!-- List -->
+            <div class="row">
+              <div class="col-12 col-lg-6">
+
+                <!-- Item -->
+                <div class="d-flex">
+
+                  <!-- Check -->
+                  <div class="badge badge-rounded-circle bg-success-soft mt-1 me-4">
+                    <i class="fe fe-check"></i>
+                  </div>
+
+                  <!-- Text -->
+                  <p class="text-success">
+                    年/月套餐
+                  </p>
+
+                </div>
+
+                <!-- Item -->
+                <div class="d-flex">
+
+                  <!-- Check -->
+                  <div class="badge badge-rounded-circle bg-success-soft mt-1 me-4">
+                    <i class="fe fe-check"></i>
+                  </div>
+
+                  <p class="text-success mb-lg-0">
+                    定制镜像
+                  </p>
+
+                </div>
+
+              </div>
+              <div class="col-12 col-lg-6">
+
+                <!-- Item -->
+                <div class="d-flex">
+
+                  <!-- Check -->
+                  <span class="badge badge-rounded-circle bg-success-soft mt-1 me-4">
+                    <i class="fe fe-check"></i>
+                  </span>
+
+                  <!-- Text -->
+                  <p class="text-success">
+                    即时快照
+                  </p>
+
+                </div>
+
+                <!-- Item -->
+                <div class="d-flex">
+
+                  <!-- Check -->
+                  <div class="badge badge-rounded-circle bg-success-soft me-1 me-4">
+                    <i class="fe fe-check"></i>
+                  </div>
+
+                  <!-- Text -->
+                  <p class="text-success mb-0">
+                    跨平台多设备
+                  </p>
+
+                </div>
+
+              </div>
+            </div> <!-- / .row -->
+
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+    </section>
+    <section class="py-8 py-md-11 pt-12">
+      <div class="container">
+        <div class="row justify-content-between align-items-center">
+          <div class="col-12 col-md-6 img-skewed img-skewed-end">
+
+            <!-- Code -->
+            <div class="card rounded-lg bg-black mb-6 mb-md-0 img-skewed-item screenshot">
+              <div class="card-header border-white-10">
+
+                <!-- Controls -->
+                <div class="d-flex">
+                  <span class="bg-danger rounded-circle" style="width: 10px; height: 10px;"></span>
+                  <span class="bg-warning rounded-circle ms-1" style="width: 10px; height: 10px;"></span>
+                  <span class="bg-success rounded-circle ms-1" style="width: 10px; height: 10px;"></span>
+                </div>
+
+              </div>
+              <div class="card-body">
+
+                <!-- Code -->
+                <code class="highlight" data-typed='{"backSpeed":2, "strings": ["&gt;&nbsp;$&nbsp;connect&nbsp;fantuyun<br/><span class=\"text-success\">fantuyun&nbsp;is&nbsp;connected</span><br/><br/>&gt;&nbsp;$&nbsp;gpu start<br/><span class=\"text-success\">gpu&nbsp;started</span><br/><span class=\"text-success\">account&nbsp;info</span><br/><span class=\"text-success\">ip&nbsp;146:139:8:57</span><br/><br/>&gt;&nbsp;$&nbsp;that&#x2019;s&nbsp;it<br/><span class=\"text-success\">Yup,&nbsp;that&#x2019;s&nbsp;it.</span>"]}' style="min-height: 183px;"></code>
+
+              </div>
+            </div>
+
+          </div>
+          <div class="col-12 col-md-5">
+
+            <!-- Heading -->
+            <h2 class="text-dark">
+              裸金属
+            </h2>
+
+            <!-- Text -->
+            <p class="fs-lg text-gray-700">
+              直连机房，最高权限，自建环境，独占资源
+            </p>
+
+            <!-- Link -->
+            <a class="fw-bold text-decoration-none text-primary">
+              私有化定制<i class="fe fe-arrow-down ms-3"></i>
+            </a>
+
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+    </section>
+
+    </section>
+
+    <!-- REGISTRATION -->
+    <section class="py-11">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-10 col-lg-8">
+
+            <!-- Card -->
+            <div class="card card-border border-primary shadow-light-lg" data-jarallax-element="-40">
+              <div class="card-body">
+                <div class="row justify-content-center">
+                  <div class="col-12 col-xl-11">
+
+                    <!-- Image -->
+                    <div class="text-center">
+                      <img src="assets/img/illustrations/illustration-8.png" alt="..." class="img-fluid mb-3" style="width: 200px;">
+                    </div>
+
+                    <!-- Heading -->
+                    <h2 class="fw-bold text-center mb-1">
+                      免费试用
+                    </h2>
+
+                    <!-- Text -->
+                    <p class="fs-lg text-center text-muted mb-6 mb-md-8 mt-5">
+                      我们提供最长一个月的测试使用和技术支持
+                    </p>
+                          <!-- Submit -->
+                          <a class="btn w-100 btn-primary mt-2 lift" target="_blank" href="https://apitable.com/share/shruXB9qXRqeWwLTCF6bL/fomvnWZTqodSxYJPie">
+                            立即申请
+                          </a>
+
+                        </div>
+                      </div>
+
+                  </div>
+                </div> <!-- / .row -->
+              </div>
+            </div>
+
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+    </section>
+
+    <!-- CURVE -->
+    <div class="position-relative mt-n16">
+      <div class="shape shape-bottom shape-fluid-x text-light">
+        {{> curves/curve-1}}
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <section class="pt-16 bg-gradient-light-white">
+      {{> partials/footer classList="bg-gray-800-50 border-top"}}
+    </section>
+
+    <!-- JAVASCRIPT -->
+    {{> partials/scripts}}
+
+  </body>
+</html>
