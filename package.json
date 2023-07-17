@@ -4,7 +4,8 @@
   "description": "",
   "scripts": {
     "start": "webpack serve --open",
-    "build": "del-cli dist && webpack --mode production"
+    "build": "del-cli dist && webpack --mode production",
+    "deploy": "git add dist/ && git commit -m \"Deploy\" && git subtree push --prefix dist origin gh-pages"
   },
   "dependencies": {
     "@popperjs/core": "^2.11.6",
